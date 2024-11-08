@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break and Leave Timer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Timer Options</h3>
+
+  <section>
+    <button id="start-leave-timer">Start Leave Timer (5 minutes)</button>
+    <button id="reset-leave-timer">Reset Leave Timer</button>
+    <div id="leave-timer-display">5:00</div>
+  </section>
+
+  <section>
+    <select id="break-duration">
+      <option value="15">15 minutes</option>
+      <option value="20">20 minutes</option>
+      <option value="30">30 minutes</option>
+    </select>
+    <button id="start-break-timer">Start Break Timer</button>
+    <button id="reset-break-timer">Reset Break Timer</button>
+    <div id="break-timer-display">Select a break time</div>
+  </section>
+
+  <audio id="notification-sound" src="notification.mp3"></audio>
+  <script src="popup.js"></script>
+</body>
+</html>
